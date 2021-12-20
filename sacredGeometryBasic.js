@@ -26,64 +26,6 @@ var plain = {
 	clear : function (){this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);}
 }
 
-function soul(height, width){
-	this.height = xBoundry;
-	this.width = yBoundry;
-	this.x = canvas.height/2;
-	this.y = canvas.height/2;
-	this.radius = x*x + y*y;
-	this.sendR = function(){
-
-	}
-	this.speedX = 0;
-	this.speedY = 0;
-
-	dimen = gameCanvas.dimension;
-
-	document.addEventListener('keydown', function(event){
-		if(event.keyCode = 37){ // left
-			this.x -= this.speedX;
-		}
-		else if (event.keyCode = 38){ // up
-			this.y -= this.speedY;
-		}
-		else if(event.keyCode = 39){ // right
-			this.x += this.speedX;
-		} 
-		else if (event.keyCode = 40) { // down
-			this.y += this.speedY;
-		}
-	});
-}
-
-
-/*
-The cell
---------
-types of cell:
-	
-*/
-function cell(rValue, xPos, yPos, type){
-	this.rValue = rValue;
-	this.type = type;
-	this.xPos = xPos;
-	this.yPos = yPos;
-	this.radius = rValue*rValue;
-
-	if(radius == getSoulPos()){
-
-	}
-
-	this.react = function(){
-		dimension = gameCanvas.dimension;
-
-		if(){
-
-		}
-	}
-
-}
-
 function plotLine(xStart, yStart, xEnd, yEnd){
 	plain.dimension.moveTo(xIntercept, yIntercept);
 	plain.dimension.lineTo(xEnd, yEnd);
