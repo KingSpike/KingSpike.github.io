@@ -105,4 +105,5 @@ window.addEventListener("load", () => {
 	dimension.strokeStyle = "rgba(255,255,255,1)";
 	dimension.arc(canvas.width/2, canvas.height/2, 90, 0, 2*Math.PI, false);
 	dimension.stroke();
+	grid();
 });
