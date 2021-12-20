@@ -91,6 +91,14 @@ function plotLine(xStart, yStart, xEnd, yEnd){
 	ctx.stroke();
 }
 
+function grid(){
+	let centerX = window.innerWidth/2;
+	let centerY = window.innerHeight/2;
+
+	plotLine(0, centerY, window.innerwidth, centerY);
+	plotLine(centerX, 0, centerX, window.innerHeight);
+}
+
 //treat like main
 window.addEventListener("load", () => {
 	
