@@ -84,6 +84,13 @@ function cell(rValue, xPos, yPos, type){
 
 }
 
+function plotLine(xStart, yStart, xEnd, yEnd){
+	ctx.moveTo(xIntercept, yIntercept);
+	ctx.lineTo(xEnd, yEnd);
+	ctx.strokeStyle = "white";
+	ctx.stroke();
+}
+
 //treat like main
 window.addEventListener("load", () => {
 	
