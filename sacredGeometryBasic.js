@@ -13,7 +13,7 @@ function StrokeNSidedPolygon(x, y, n){
 }
 */
 
-var gameCanvas = {
+var Canvas = {
 	canvas: document.createEmlement("canvas");
 	start: function() {
 		this.frameNum = 0;
@@ -85,10 +85,10 @@ function cell(rValue, xPos, yPos, type){
 }
 
 function plotLine(xStart, yStart, xEnd, yEnd){
-	ctx.moveTo(xIntercept, yIntercept);
-	ctx.lineTo(xEnd, yEnd);
-	ctx.strokeStyle = "white";
-	ctx.stroke();
+	Canvas.dimension.moveTo(xIntercept, yIntercept);
+	Canvas.dimension.lineTo(xEnd, yEnd);
+	Canvas.dimension.strokeStyle = "white";
+	Canvas.dimension.stroke();
 }
 
 function grid(){
@@ -102,8 +102,8 @@ function grid(){
 //treat like main
 window.addEventListener("load", () => {
 	
-	dimension.strokeStyle = "rgba(255,255,255,1)";
-	dimension.arc(canvas.width/2, canvas.height/2, 90, 0, 2*Math.PI, false);
-	dimension.stroke();
+	Canvas.dimension.strokeStyle = "rgba(255,255,255,1)";
+	Canvas.dimension.arc(canvas.width/2, canvas.height/2, 90, 0, 2*Math.PI, false);
+	Canvas.dimension.stroke();
 	grid();
 });
