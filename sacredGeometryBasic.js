@@ -13,39 +13,76 @@ function StrokeNSidedPolygon(x, y, n){
 }
 */
 
-var plain = {
-	canvas: document.createEmlement("canvas");
-	start: function() {
-		this.frameNum = 0;
-		this.canvas.height = window.innerHeight-20;
-		this.canvas.width = window.innerWidth-40;
-		this.dimension = this.canvas.getContext("2d");
-		document.body.insertBefore(this.canvas, document.body.childNodes[0]);
-		this.interval = setInterval(updateGameArea, 20);
+const winSize = {
+	height: document.getElementById("backgroundLayer").height,
+	width: document.getElementById("backgroundLayer").width
+};
+
+const plains = {
+	//Background : 
+	canvasLayerI: document.getElementById("backgroundLayer"),
+	// Presentation Layer : thing you can change, move, 
+	canvasLayerII: document.getElementById("presentationLayer"),
+	// User Interface the layer we interact with to affect the presentation layer
+	canvasLayerIII: document.getElementById("userInterfaceLayer"),
+	//layering adds depth, by using layering you can create essentially 3 layered movies
+	ctxLayerI: function(){
+		return this.canvasLayerI.getContext('2d');
+	},
+	ctxLayerII: function(){
+		return this.canvasLayerII.getContext('2d');
+	},
+	ctxLayerIII: function(){
+		return this.canvasLayerIII.getContext('2d');
+	},
+	clearLayerI: function(){
+		this.ctxLayerI.clearRect(0,0,this.canvasLayerI.width,this.canvasLayerI.height);
+	},
+	clearLayerII: function(){
+		this.ctxLayerII.clearRect(0,0,this.canvasLayerII.width,this.canvasLayerII.height);
+	},
+	clearLayerIII: function(){
+		this.ctxLayerIII.clearRect(0,0,this.canvasLayerIII.width,this.canvasLayerIII.height);
 	}
-	clear : function (){this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);}
 }
 
-function plotLine(xStart, yStart, xEnd, yEnd){
-	plain.dimension.moveTo(xIntercept, yIntercept);
-	plain.dimension.lineTo(xEnd, yEnd);
-	plain.dimension.strokeStyle = "white";
-	plain.dimension.stroke();
+function archemedesSpiral(){
+	var spiralRadius;
+	var angle;
+
+	var size = document.getElementById("sizeSlider");
+	var spiralRadius = document.getElementById("widthSlider");
+	var angle = document.getElementById("angleSlider");
+	//adjust slider values
+
+	var ctx = plains.ctxLayerIII();
+	ctx.clearRect(0,0,document.getElementById("backgroundLayer").width, document.getElementById("backgroundLayer").height);
+
+	ctx.moveTo(document.getElementById("backgroundLayer").width/2, document.getElementById("backgroundLayer").height/2);
+	ctx.strokeStyle = "black";
+	console.log(size.value);
+	for (let i = 0; i < size.value; i++) {
+	  newAngle = (0.1 * angle.value)*i;
+	  x=(winSize.width/2) + (spiralRadius.value*newAngle)*Math.cos(newAngle);
+	  y=(winSize.width/2) + (spiralRadius.value*newAngle)*Math.sin(newAngle);
+	  ctx.lineTo(x, y);
+	}
+	ctx.stroke();
 }
 
-function grid(){
-	let centerX = window.innerWidth/2;
-	let centerY = window.innerHeight/2;
-
-	plotLine(0, centerY, window.innerwidth, centerY);
-	plotLine(centerX, 0, centerX, window.innerHeight);
+function slider(){
+	document.getElementById("sizeSlider").onchange = function () {
+		archemedesSpiral();
+	};
+	document.getElementById("widthSlider").onchange = function () {
+		archemedesSpiral();
+	};
+	document.getElementById("angleSlider").onchange = function () {
+		archemedesSpiral();
+	};
 }
 
 //treat like main
 window.addEventListener("load", () => {
-	
-	plain.dimension.strokeStyle = "rgba(255,255,255,1)";
-	plain.dimension.arc(canvas.width/2, canvas.height/2, 90, 0, 2*Math.PI, false);
-	plain.dimension.stroke();
-	grid();
+	archemedesSpiral();
 });
