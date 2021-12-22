@@ -18,6 +18,18 @@ const winSize = {
 	width: document.getElementById("backgroundLayer").width
 };
 
+function buttons(){
+	var menuButton = document.getElementById("menuButton");
+	var bottonHolder = document.getElementById("buttonHolder");
+	if(bottonHolder.style.display == "none"){
+		menuButton.style.top = "5%";
+		bottonHolder.style.display = "inline-block";
+	} else {
+		menuButton.style.top = "44.5%";
+		bottonHolder.style.display = "none";
+	}
+}
+
 const plains = {
 	//Background : 
 	canvasLayerI: document.getElementById("backgroundLayer"),
