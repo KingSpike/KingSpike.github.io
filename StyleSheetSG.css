@@ -9,6 +9,11 @@ aside{
 	border-color: #FEDEB3;
 }
 
+button {
+	position: absolute;
+	left: 50%;
+}
+
 canvas{
 	position: absolute;
 	left: 0;
