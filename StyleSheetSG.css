@@ -22,7 +22,7 @@ canvas{
 	background-color: transparent;
 	display: block;
 	color: #AAFFBA;
-	border: 2px solid color;
+	border: 2px solid #AAFFBA;
 	border-radius: 50%;
 }
 
