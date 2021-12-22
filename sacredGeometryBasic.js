@@ -29,7 +29,6 @@ function buttons(){
 		bottonHolder.style.display = "none";
 	}
 }
-
 const plains = {
 	//Background : 
 	canvasLayerI: document.getElementById("backgroundLayer"),
