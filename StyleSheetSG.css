@@ -18,12 +18,23 @@ canvas{
 	border: outset;
 }
 
-.btn {
-	background-color: transparent;
-	display: block;
+span {
+	display: inline-block;
 	color: #AAFFBA;
+	vertical-align: middle;
+	max-width: 90%;
+}
+
+.btn {
+	background-color: #AAFFBA;
+	display: inline-block;
+	outline: none;
 	border: 2px solid #AAFFBA;
-	border-radius: 50%;
+	border-style: none;
+	border-radius: 100%;
+	overflow: none;
+	text-align: center;
+	padding: 0;
 }
 
 #backgroundLayer{
