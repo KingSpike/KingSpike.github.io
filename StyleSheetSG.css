@@ -2,13 +2,6 @@ body{
 	background-color: #74A3AB;
 }
 
-a {
-	background-color: transparent;
-	color: #AAFFBA;
-	border: 2px solid color;
-	border-radius: 50%;
-}
-
 aside{
 	background-color: #FEB8B3;
 	float: right;
@@ -23,6 +16,14 @@ canvas{
 	background: transparent;
 	border-color: #9B9897;
 	border: outset;
+}
+
+.btn {
+	background-color: transparent;
+	display: block;
+	color: #AAFFBA;
+	border: 2px solid color;
+	border-radius: 50%;
 }
 
 #backgroundLayer{
