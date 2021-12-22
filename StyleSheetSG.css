@@ -22,19 +22,15 @@ span {
 	display: inline-block;
 	color: #AAFFBA;
 	vertical-align: middle;
-	max-width: 90%;
+	
 }
 
 .btn {
-	min-width: 60px;
-	max-width: 120px;
 	background-color: #AAFFBA;
 	display: inline-block;
 	outline: none;
 	border: 2px solid #AAFFBA;
-	border-style: none;
 	border-radius: 50%;
-	overflow: none;
 	text-align: center;
 	padding: 10px;
 }
