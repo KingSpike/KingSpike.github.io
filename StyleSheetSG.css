@@ -20,9 +20,9 @@ canvas{
 
 img {
 	position:relative;
-    height: 50px;
-	width: 50px;
-	transform: translate(-10%,-10%);
+    height: 60px;
+	width: 60px;
+	transform: translate(-15%, -15%);
 }
 
 a {
@@ -40,10 +40,10 @@ a {
 }
 
 #menuButton {
-	height: 50px;
-	width: 50px;
+	height: 80px;
+	width: 80px;
 	background-color: #AAFFBA;
-  	color: black;
+	color: black;
   	padding: 20px;
   	text-align: center;
   	text-decoration: none;
