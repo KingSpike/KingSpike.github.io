@@ -19,8 +19,7 @@ canvas{
 }
 
 .btn {
-	position: absolute;
-	height: 80px;
+	height: 40px;
 	width: 20px;
 	background-color: #AAFFBA;
 	border: none;
@@ -28,6 +27,7 @@ canvas{
   	color: black;
   	padding: 20px;
   	text-align: center;
+  	text-decoration: none;
   	display: inline-block;
   	border-radius: 100%;
 }
