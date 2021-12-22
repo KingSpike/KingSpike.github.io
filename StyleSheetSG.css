@@ -18,9 +18,15 @@ canvas{
 	border: outset;
 }
 
+div {
+	align-items: center;
+	vertical-align: middle;
+}
+
 a {
 	height: 40px;
 	width: 40px;
+	line-height: 39px;
 	background-color: #AAFFBA;
 	border: none;
 	text-decoration-color: black;
