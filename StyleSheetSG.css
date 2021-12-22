@@ -21,13 +21,13 @@ canvas{
 a {
 	height: 80px;
 	width: 80px;
+	align-items: center;
 	background-color: #AAFFBA;
 	border: none;
 	text-decoration-color: black;
   	color: black;
   	padding: 20px;
   	text-align: center;
-  	vertical-align: middle;
   	text-decoration: none;
   	display: inline-block;
   	border-radius: 100%;
