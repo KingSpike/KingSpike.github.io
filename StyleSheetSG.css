@@ -2,13 +2,6 @@ body{
 	background-color: #74A3AB;
 }
 
-aside{
-	background-color: #FEB8B3;
-	float: right;
-	border: solid;
-	border-color: #FEDEB3;
-}
-
 canvas{
 	position: absolute;
 	left: 0;
@@ -41,6 +34,8 @@ a {
 }
 
 #menuButton {
+	top: 45%;
+	left: 50%;
 	height: 40px;
 	width: 40px;
 	background-color: #AAFFBA;
@@ -65,17 +60,6 @@ a {
 
 #userInterfaceLayer{
 	z-index: 2;
-}
-
-.button {
-	position: relative;
-	background-color: #FF935A;
-	text-align: center;
-	font-family: "Times New Roman", Times, serif;
-	font-size: ;
-	color: ;
-	border-radius: calc();
-	border: none;
 }
 
 .centerPage {
