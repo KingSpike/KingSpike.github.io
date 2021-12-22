@@ -26,6 +26,8 @@ span {
 }
 
 .btn {
+	min-width: 60px;
+	max-width: 120px;
 	background-color: #AAFFBA;
 	display: inline-block;
 	outline: none;
