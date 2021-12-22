@@ -17,11 +17,14 @@ canvas{
 	border-color: #9B9897;
 	border: outset;
 }
+img {
+	height: 100%;
+	width: 100%;
+}
 
 a {
 	height: 40px;
 	width: 40px;
-	line-height: 39px;
 	background-color: #AAFFBA;
 	border: none;
 	text-decoration-color: black;
