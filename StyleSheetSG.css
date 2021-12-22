@@ -2,7 +2,7 @@ body{
 	background-color: #74A3AB;
 }
 
-a: link, a: visited {
+a {
 	background-color: transparent;
 	color: #AAFFBA;
 	border: 2px solid color;
