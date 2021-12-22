@@ -1,8 +1,47 @@
 body{
-	background-color: #878787;
+	background-color: #FF93B4;
 }
 
 canvas{
-	background-color: #545454;
-	border: 2px solid #F4CF00;
+	position: absolute;
+	left: 0;
+	right: 0;
+	background: transparent;
+}
+
+#backgroundLayer{
+	z-index: 0;
+	background: #FF93D2;
+}
+
+#presentationLayer{
+	z-index: 1;
+}
+
+#userInterfaceLayer{
+	z-index: 2;
+}
+
+.button {
+	position: relative;
+	background-color: #FF935A;
+	text-align: center;
+	font-family: "Times New Roman", Times, serif;
+	font-size: ;
+	color: ;
+	border-radius: calc();
+	border: none;
+}
+aside{
+	background-color: #FEB8B3;
+	float: right;
+	border: solid;
+	border-color: #FEDEB3;
+}
+
+canvas{
+	width: 85%;
+	height: 95%;
+	border-color: #9B9897;
+	border: outset;
 }
