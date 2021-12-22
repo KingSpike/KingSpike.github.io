@@ -19,13 +19,16 @@ canvas{
 }
 
 .btn {
+	position: absolute;
+	left: 50%;
+	right: 50%;
 	height: 80px;
 	width: 20px;
 	background-color: #AAFFBA;
 	border: none;
 	text-decoration-color: black;
   	color: black;
-  	padding: 20px;
+  
   	text-align: center;
   	display: inline-block;
   	border-radius: 50%;
