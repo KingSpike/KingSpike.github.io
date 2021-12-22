@@ -19,6 +19,7 @@ canvas{
 }
 
 div {
+	box-sizing: border-box;
 	float: left;
 }
 
