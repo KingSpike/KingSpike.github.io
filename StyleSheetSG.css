@@ -36,6 +36,20 @@ a {
   	padding: 20px;
   	text-align: center;
   	text-decoration: none;
+  	display: none;
+  	border-radius: 100%;
+}
+
+#menuButton {
+	height: 40px;
+	width: 40px;
+	background-color: #AAFFBA;
+	border: none;
+	text-decoration-color: black;
+  	color: black;
+  	padding: 20px;
+  	text-align: center;
+  	text-decoration: none;
   	display: inline-block;
   	border-radius: 100%;
 }
