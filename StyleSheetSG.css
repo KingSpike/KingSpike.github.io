@@ -2,6 +2,13 @@ body{
 	background-color: #74A3AB;
 }
 
+aside{
+	background-color: #FEB8B3;
+	float: right;
+	border: solid;
+	border-color: #FEDEB3;
+}
+
 canvas{
 	position: absolute;
 	left: 0;
