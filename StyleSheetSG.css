@@ -26,6 +26,8 @@ span {
 }
 
 .btn {
+	height: 20px;
+	width: 20px;
 	background-color: #AAFFBA;
 	border: none;
   	color: white;
