@@ -20,10 +20,9 @@ canvas{
 
 img {
 	position:relative;
-	top: -25%;
-	left: -25%;
-	height: 150%;
-	width: 150%;
+    height: 50px;
+	width: 50px;
+	transform: translate(-10%,-10%);
 }
 
 a {
