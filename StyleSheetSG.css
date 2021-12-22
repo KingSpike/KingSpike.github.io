@@ -28,7 +28,7 @@ img {
 	position:relative;
     height: 60px;
 	width: 60px;
-	transform: translate(-15%, -20%);
+	transform: translate(-15%, -21%);
 }
 
 a {
@@ -58,7 +58,6 @@ a {
   	border: none;
   	border-radius: 100%;
 }
-
 
 #backgroundLayer{
 	z-index: 0;
