@@ -36,13 +36,17 @@ const plains = {
 		return this.canvasLayerIII.getContext('2d');
 	},
 	clearLayerI: function(){
-		this.ctxLayerI.clearRect(0,0,this.canvasLayerI.width,this.canvasLayerI.height);
+		let x = this.ctxLayerI();
+		x.clearRect(0,0,this.canvasLayerI.width,this.canvasLayerI.height);
 	},
 	clearLayerII: function(){
-		this.ctxLayerII.clearRect(0,0,this.canvasLayerII.width,this.canvasLayerII.height);
+		let x = this.ctxLayerII();
+		x.clearRect(0,0,this.canvasLayerII.width,this.canvasLayerII.height);
 	},
 	clearLayerIII: function(){
-		this.ctxLayerIII.clearRect(0,0,this.canvasLayerIII.width,this.canvasLayerIII.height);
+		console.log("reched");
+		let x = this.ctxLayerIII();
+		x.clearRect(0,0,this.canvasLayerIII.width,this.canvasLayerIII.height);
 	}
 }
 
@@ -56,28 +60,37 @@ function archemedesSpiral(){
 	//adjust slider values
 
 	var ctx = plains.ctxLayerIII();
-	ctx.clearRect(0,0,document.getElementById("backgroundLayer").width, document.getElementById("backgroundLayer").height);
-
 	ctx.moveTo(document.getElementById("backgroundLayer").width/2, document.getElementById("backgroundLayer").height/2);
 	ctx.strokeStyle = "black";
+	ctx.lineWidth = 1;
+	ctx.beginPath()
 	console.log(size.value);
+	console.log(spiralRadius.value);
+	console.log(angle.value);
+	let oldX = document.getElementById("backgroundLayer").width/2;
+	let oldY = document.getElementById("backgroundLayer").height/2
 	for (let i = 0; i < size.value; i++) {
 	  newAngle = (0.1 * angle.value)*i;
-	  x=(winSize.width/2) + (spiralRadius.value*newAngle)*Math.cos(newAngle);
-	  y=(winSize.width/2) + (spiralRadius.value*newAngle)*Math.sin(newAngle);
+	  x=(oldX) + (spiralRadius.value*newAngle)*Math.cos(newAngle);
+	  y=(oldY) + (spiralRadius.value*newAngle)*Math.sin(newAngle);
 	  ctx.lineTo(x, y);
+	  oldX = x;
+	  oldY = y;
 	}
 	ctx.stroke();
 }
 
 function slider(){
 	document.getElementById("sizeSlider").onchange = function () {
+		plains.clearLayerIII();
 		archemedesSpiral();
 	};
 	document.getElementById("widthSlider").onchange = function () {
+		plains.clearLayerIII();
 		archemedesSpiral();
 	};
 	document.getElementById("angleSlider").onchange = function () {
+		plains.clearLayerIII();
 		archemedesSpiral();
 	};
 }
