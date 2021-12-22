@@ -2,6 +2,14 @@ body{
 	background-color: #74A3AB;
 }
 
+a: link, a: visited {
+	background-color: transparent;
+	color: #AAFFBA;
+	border: 2px solid color;
+	border-radius: 50%;
+	padding: 20px 20px;
+}
+
 aside{
 	background-color: #FEB8B3;
 	float: right;
