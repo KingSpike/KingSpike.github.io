@@ -18,6 +18,10 @@ canvas{
 	border: outset;
 }
 
+div {
+	float: left;
+}
+
 a {
 	height: 40px;
 	width: 40px;
