@@ -50,6 +50,36 @@ const plains = {
 	}
 }
 
+function shape(){
+	var spiralRadius;
+	var angle;
+
+	var size = document.getElementById("sizeSlider");
+	var spiralRadius = document.getElementById("widthSlider");
+	var angle = document.getElementById("angleSlider");
+	//adjust slider values
+
+	var ctx = plains.ctxLayerIII();
+	ctx.moveTo(document.getElementById("backgroundLayer").width/2, document.getElementById("backgroundLayer").height/2);
+	ctx.strokeStyle = "black";
+	ctx.lineWidth = 1;
+	ctx.beginPath()
+	console.log(size.value);
+	console.log(spiralRadius.value);
+	console.log(angle.value);
+	let oldX = document.getElementById("backgroundLayer").width/2;
+	let oldY = document.getElementById("backgroundLayer").height/2
+	for (let i = 0; i < size.value; i++) {
+	  newAngle = (0.1 * angle.value)*i;
+	  x=(spiralRadius.value*newAngle)*Math.cos(newAngle);
+	  y=(spiralRadius.value*newAngle)*Math.sin(newAngle);
+	  ctx.lineTo(x, y);
+	  oldX = x;
+	  oldY = y;
+	}
+	ctx.stroke();
+}
+
 function archemedesSpiral(){
 	var spiralRadius;
 	var angle;
@@ -97,5 +127,5 @@ function slider(){
 
 //treat like main
 window.addEventListener("load", () => {
-	archemedesSpiral();
+	
 });
