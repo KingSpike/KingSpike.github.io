@@ -75,7 +75,7 @@ a {
 .centerPage {
 	float: none;
 	position: absolute;
-	top: 50%;
-	left: 50%;
+	top: 44.5%;
+	left: 44.5%;
 	transform: translate(-50%,-50%);
 }
