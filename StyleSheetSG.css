@@ -45,6 +45,34 @@ a {
   	border-radius: 100%;
 }
 
+#button1 {
+	height: 80px;
+	width: 80px;
+	background-color: ;
+	color: black;
+	padding: 20px;
+  	text-align: center;
+  	text-decoration: none;
+  	text-decoration-color: black;
+  	display: inline-block;
+  	border: none;
+  	border-radius: 100%;
+}
+
+#button2 {
+	height: 80px;
+	width: 80px;
+	background-color: ;
+	color: black;
+	padding: 20px;
+  	text-align: center;
+  	text-decoration: none;
+  	text-decoration-color: black;
+  	display: inline-block;
+  	border: none;
+  	border-radius: 100%;
+}
+
 #menuButton {
 	height: 80px;
 	width: 80px;
@@ -76,12 +104,5 @@ a {
 	float: none;
 	position: absolute;
 	top: 44.5%;
-	left: 44.5%;
-}
-
-.centerStack1 {
-	float: none;
-	position: absolute;
-	top: 39.5%;
 	left: 44.5%;
 }
