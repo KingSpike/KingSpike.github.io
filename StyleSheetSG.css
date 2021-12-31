@@ -75,6 +75,7 @@ a {
 .centerPage {
 	float: none;
 	position: absolute;
+	display: none;
 	top: 44.5%;
 	left: 44.5%;
 }
