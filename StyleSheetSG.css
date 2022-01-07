@@ -45,6 +45,19 @@ a {
   	border-radius: 100%;
 }
 
+#backgroundLayer{
+	z-index: 0;
+	background: #90DFEE;
+}
+
+#presentationLayer{
+	z-index: 1;
+}
+
+#userInterfaceLayer{
+	z-index: 2;
+}
+
 #menuButton {
 	height: 80px;
 	width: 80px;
@@ -59,19 +72,6 @@ a {
   	border-radius: 100%;
 }
 
-#backgroundLayer{
-	z-index: 0;
-	background: #90DFEE;
-}
-
-#presentationLayer{
-	z-index: 1;
-}
-
-#userInterfaceLayer{
-	z-index: 2;
-}
-
 .centerPage {
 	float: none;
 	position: absolute;
@@ -80,10 +80,9 @@ a {
 	left: 44.5%;
 }
 
-.button1 {
+.buttonType1 {
 	float: left;
 	top: 25%;
-
 	height: 40px;
 	width: 40px;
 	background-color: ;
@@ -97,7 +96,7 @@ a {
   	border-radius: 100%;
 }
 
-.button2 {
+.buttonType2 {
 	float: left;
 	top: 50%;
 	height: 40px;
