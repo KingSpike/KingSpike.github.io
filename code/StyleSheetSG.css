@@ -1,0 +1,113 @@
+body{
+	background-color: #74A3AB;
+}
+
+aside{
+	background-color: #FEB8B3;
+	float: right;
+	border: solid;
+	border-color: #FEDEB3;
+}
+
+button {
+	position: absolute;
+	left: 44.5%;
+	top: 44.5%;
+}
+
+canvas{
+	position: absolute;
+	left: 0;
+	right: 0;
+	background: transparent;
+	border-color: #9B9897;
+	border: outset;
+}
+
+img {
+	position:relative;
+    height: 60px;
+	width: 60px;
+	transform: translate(-15%, -20%);
+}
+
+a {
+	height: 40px;
+	width: 40px;
+	background-color: #AAFFBA;
+	color: black;
+  	padding: 20px;
+  	text-align: center;
+  	text-decoration: none;
+  	text-decoration-color: black;
+  	display: none;
+  	border: none;
+  	border-radius: 100%;
+}
+
+#backgroundLayer{
+	z-index: 0;
+	background: #90DFEE;
+}
+
+#presentationLayer{
+	z-index: 1;
+}
+
+#userInterfaceLayer{
+	z-index: 2;
+}
+
+#menuButton {
+	height: 80px;
+	width: 80px;
+	background-color: #FFB0B0;
+	color: black;
+  	padding: 20px;
+  	text-align: center;
+  	text-decoration: none;
+  	text-decoration-color: black;
+  	display: inline-block;
+  	border: none;
+  	border-radius: 100%;
+}
+
+.centerPage {
+	float: none;
+	position: absolute;
+	display: none;
+	top: 44.5%;
+	left: 44.5%;
+}
+
+.buttonType1 {
+	float: left;
+	top: 25%;
+	height: 40px;
+	width: 40px;
+	background-color: ;
+	color: black;
+	padding: 20px;
+  	text-align: center;
+  	text-decoration: none;
+  	text-decoration-color: black;
+  	display: inline-block;
+  	border: none;
+  	border-radius: 100%;
+}
+
+.buttonType2 {
+	float: left;
+	top: 50%;
+	height: 40px;
+	width: 40px;
+	background-color: ;
+	color: black;
+	padding: 20px;
+  	text-align: center;
+  	text-decoration: none;
+  	text-decoration-color: black;
+  	display: inline-block;
+  	border: none;
+  	border-radius: 100%;
+}
